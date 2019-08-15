@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập02</title>
+</head>
+<body>
+    <!-- Viết hàm tính diện tích, hàm tính chu vi hình tròn. Gọi hàm vừa xây dựng được-->
+    <script>
+        function chuVi(a) {
+            return 2*3.14*a;
+        }
+        function dienTich(a) {
+            return a*a*3.14;
+        }
+        let r=parseInt(prompt("bán kính đường tròn là :"));
+        let cv=chuVi(r);
+        let dt=dienTich(r);
+        alert("chu vi hình tròn là "+cv);
+        alert("diện tích hình tròn là :"+dt);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 06</title>
+</head>
+<body>
+    <!--Viết hàm nhận vào một số, kiểm tra xem nếu số đưa vào có phải là nguyên dương không.
+     Nếu là nguyên dương trả về true, ngược lại trả về false.-->
+    <script>
+        function check(number) {
+            if (number>0) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        let numr=parseInt(prompt("enter your number "));
+        let kt =check(numr);
+        if (kt) {
+            alert(numr+" là số nguyên dương");
+        }else {
+            alert("là số nguyên âm");
+        }
+    </script>
+</body>
+</html>

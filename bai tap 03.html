@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 03</title>
+</head>
+<body>
+    <!-- Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.-->
+    <script>
+        function giaiThua(numr) {
+            let result=1;
+            for (let i=1;i<=numr;i++) {
+                result*=i;
+            }
+            return result;
+        }
+        let number =parseInt(prompt("enter your number "));
+        let result = giaiThua(number);
+        alert("giai thừa của "+number+" là "+ result);
+    </script>
+</body>
+</html>

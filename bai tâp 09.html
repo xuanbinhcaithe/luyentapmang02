@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 09</title>
+</head>
+<body>
+    <!--Viết hàm truyền vào một mảng ký tự, và một ký tự bất kỳ, kiểm tra xem ký tự bất kỳ đó có nằm trong mảng không.
+     Nếu có trả về số lần xuất hiện của ký tự đó, nếu không trả về -1-->
+    <script>
+        function check(char,str) {
+            let count =0;
+                for (let i=0;i<str.length;i++) {
+                    if (char==str[i]){
+                        count++;
+                    }
+                }
+                if (count) {
+                    return count;
+                }else {
+                    return -1;
+                }
+
+            }
+
+
+        let myArray = prompt("nhập vào dãy ký tự bất kỳ");
+        let myChar=prompt("nhập vào 1 ký tự bất kỳ");
+        let kt = check(myChar,myArray);
+        if (kt==-1) {
+            alert("không tồn tại");
+        }else {
+            alert("xuật hiên "+kt+" lần ");
+        }
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 04</title>
+</head>
+<body>
+    <!--  Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không. Nếu là ký tự số hàm trả về true, ngược lại trả về false-->
+    <script>
+        function check(str) {
+            let string1='0123456789';
+            if (string1.indexOf(str)!== -1) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        let char=prompt("nhập vào ký tự bất kỳ :");
+        let kt=check(char);
+        if (kt) {
+            alert("đây là ký tự số");
+        } else {
+            alert("đây không phải ký tự số");
+        }
+    </script>
+</body>
+</html>

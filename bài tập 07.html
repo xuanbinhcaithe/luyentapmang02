@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bài tập 07</title>
+</head>
+<body>
+    <!--Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.-->
+    <script>
+
+        function conversion(a,b) {
+            let temp = a[0];
+            a[0] = b[0];
+            b[0] = temp;
+        }
+        let firstNum = parseInt(prompt("Nhap vao so thu nhat: "));
+        let firstNumObj = [firstNum];
+        let secondNum = parseInt(prompt("Nhap vao so thu hai: "));
+        let secondNumObj = [secondNum];
+        document.write("Truoc khi hoan vi: so thu nhat: " + firstNumObj[0] + " so thu 2: " + secondNumObj[0]);
+        conversion(firstNumObj, secondNumObj);
+        document.write("<br/>Sau khi hoan vi: so thu nhat: " + firstNumObj[0] + " so thu 2: " + secondNumObj[0]);
+    </script>
+
+</body>
+</html >
